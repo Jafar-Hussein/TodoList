@@ -32,7 +32,7 @@ jobs:
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
       run: |
-         curl -x POST \
+         curl -X POST \
            -H "Authorization: token ${{ secrets.ACCESS_TOKEN }}" \
             https://api.github.com/repos/Jafar/TodoList/dependency-graph/snapshots
   
